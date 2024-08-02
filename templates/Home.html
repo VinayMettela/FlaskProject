@@ -17,12 +17,20 @@
       <title>Job Application site</title>
   </head>
     <body>
+      {% include 'nav.html' %}
+      <img class ="img-fluid" id="banner" src="https://8ecfe672-cf74-4258-9ee1-23f91a8740e5-00-2l07f0x318n1f.pike.replit.dev/static/banner.jpg" alt="banner" height='270'>
       <div class="container">
         <h1 class="text-center mt-2 mb-4">{{Company_name}} Carrers</h1>
-        <img class ="img-fluid" id="banner" src="https://8ecfe672-cf74-4258-9ee1-23f91a8740e5-00-2l07f0x318n1f.pike.replit.dev/static/banner.jpg" alt="banner" height='270'>
         
-        <h2 class="text-center mt-2 mb-4">About</h2>
-        <p class="lead">Welcome to Cool Careers! We are dedicated to connecting talented individuals with rewarding career opportunities. Our mission is to empower job seekers by providing them with the resources, guidance, and support they need to achieve their professional goals. Whether you are looking for your first job, a career change, or advancement in your current field, we are here to help you every step of the way.</p>
+        <!-- <h2 class="text-center mt-2 mb-4">About</h2> -->
+        <div class="row" style="margin-bottom:26px">
+          <div class=col-md-8>
+          <p class="lead">Welcome to Cool Careers! We are dedicated to connecting talented individuals with rewarding career opportunities. Our mission is to empower job seekers by providing them with the resources, guidance, and support they need to achieve their professional goals. Whether you are looking for your first job, a career change, or advancement in your current field, we are here to help you every step of the way.</p>
+            </div>
+            <div class="d-none d-md-block col-md-4">
+              <img src="static/peopleWorking.jpg" alt="people working" style="height:300px;border-radius:4px;">
+            </div>
+          </div>
     
         <h2 class="text-center mt-2 mb-4">Job Openings</h2>
       
@@ -33,9 +41,10 @@
         </div>
       
         <div class="text-center">
-        <button class="btn btn-primary btn-lg">Contact us</button>
-          <p class="mt-2 md-4">Copy rights 2023 , Cool carrers</p>
+        <a class="btn btn-primary btn-lg" href="mailto:hello@coolcareers?subject=Question%20regarding%20job%20openings&body=Your%20Name%20%3A%20%3CEnter%20your%20name%3E%0D%0A%0D%0AQuery%20%3A%20%3CEnter%20your%20Question%3E">Contact us</a>
+          <!-- <p class="mt-2 md-4">Copy rights 2023 , Cool carrers</p> -->
         </div>
+        {% include 'footer.html'%}
       </div>
       </body>
 </html>
